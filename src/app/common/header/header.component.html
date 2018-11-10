@@ -1,0 +1,39 @@
+<nav class="navbar navbar-default navbar-fixed-top" [ngClass]="{'permanentShrink':shrinkHeader}">
+  <div class="container-fluid">
+    <div class="navbar-header navbar-fixed-top backGround-white">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+        aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" (click)="navigateToTop()" style="cursor:pointer;">
+        <img src="https://via.placeholder.com/150x45.png?text=DummyLogo" class="logo" />
+      </a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right navbar-ul colored-nav">
+        <li>
+          <a class="header-lable" onselectstart="return false" style="cursor: pointer">Home</a>
+        </li>
+        <li>
+          <a class="header-lable" onselectstart="return false" style="cursor: pointer">Product Offerings</a>
+        </li>
+        <li>
+          <a class="header-lable" onselectstart="return false" style="cursor: pointer">Resources</a>
+        </li>
+        <li>
+          <a class="header-lable" onselectstart="return false" style="cursor: pointer">Case Studies</a>
+        </li>
+        <li>
+          <a class="header-lable" onselectstart="return false" style="cursor: pointer">Pricing</a>
+        </li>
+        <li>
+          <a class="header-lable" onselectstart="return false" style="cursor: pointer">Log In</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>

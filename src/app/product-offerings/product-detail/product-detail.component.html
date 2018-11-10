@@ -1,0 +1,25 @@
+<div class="row">
+  <div class="col-lg-12 text-center">
+    <h1 style="font-size:18px;">{{productSubDetail.name}}</h1>
+    <span style="font-size:12px;color:blue" *ngIf="productSubDetail">Some Middle Text</span>
+  </div>
+</div>
+<div class="row">
+  <main class="main-area">
+    <div class="centered">
+      <section class="cards">
+        <article class="card" *ngFor="let data of productSubDetail.steps">
+          <a href="#">
+            <figure class="thumbnail">
+              <img src="https://via.placeholder.com/300x300.png?text={{data.name}}" alt="meow">
+            </figure>
+            <div class="card-content" style="text-align:center;">
+              <span style="color:blue;text-transform: capitalize">{{data.name}}</span>
+              <p style="text-align:center">Some addition info Customize automate dataformat check long</p>
+            </div>
+          </a>
+        </article>
+      </section>
+    </div>
+  </main>
+</div>

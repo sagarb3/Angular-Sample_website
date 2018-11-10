@@ -1,0 +1,12 @@
+<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12" *ngFor="let data of productDetail">
+  <div class="row wt-card-row" (click)="onSubSelected(data.id)">
+    <div class="col-md-8 col-xs-8">
+      <span><img src="https://via.placeholder.com/50x50.png?text={{data.name}}" alt=""></span>
+      <span>{{data.name}}</span>
+    </div>
+    <div class="col-md-4 col-xs-4 wt-card-ar">
+      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACWSURBVGhD7djBCYNAFEXRwQoM2IUL+zENWIp9ZeFOUoe2EIhPdCC4cGHAmf+5By6IC+GBiBoAAAAA3KhS9XZo10ONalbNesKiQg3qu2d6TKs+ijG5OY6ZFGNywJgzneoT9VZxyN9jXur3Yqm7PMbNEDe3ViounlyMyIXLESZfGp/K/AhXH1alMv+pG7n4+QAAAADcJYQFgzq1QcGQyMkAAAAASUVORK5CYII="
+        width="30px">
+    </div>
+  </div>
+</div>
